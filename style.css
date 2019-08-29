@@ -1,0 +1,53 @@
+@-webkit-keyframes fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@-moz-keyframes    fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@-o-keyframes      fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@keyframes         fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0 10%;
+
+  -webkit-animation: fade-in s linear; /* Safari 4+ */
+  -moz-animation: fade-in 2s linear; /* Fx 5+ */
+  -o-animation: fade-in 2s linear; /* Opera 12+ */
+  animation: fade-in 2s linear; /* IE 10+, Fx 29+ */
+}
+
+h1, p {
+  margin: 0.2em 0;
+}
+
+a {
+  color: inherit;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.content {
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.avatar-photo {
+  width: 100%;
+}
